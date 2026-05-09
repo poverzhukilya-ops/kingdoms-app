@@ -1,0 +1,1 @@
+﻿version: '3.8'\nservices:\n  postgres:\n    image: postgres:15\n    environment:\n      POSTGRES_PASSWORD: kingdoms\n    ports:\n      - '5432:5432'
