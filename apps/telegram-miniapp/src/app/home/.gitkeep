@@ -1,0 +1,24 @@
+import React from 'react';
+import KingdomMap from '../../components/map/KingdomMap';
+import RankingList from '../../components/ranking/RankingList';
+
+// Import global styles (Make sure this path is correct in your setup)
+import '../../styles/globals.css';
+
+const HomePage: React.FC = () => {
+  return (
+    <div className="home-page-container">
+      {/* Left Side: The Map */}
+      <div className="map-wrapper">
+        <KingdomMap />
+      </div>
+
+      {/* Right Side: The Ranking */}
+      <div className="ranking-wrapper">
+        <RankingList />
+      </div>
+    </div>
+  );
+};
+
+export default HomePage;
